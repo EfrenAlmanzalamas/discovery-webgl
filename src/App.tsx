@@ -5,10 +5,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function App() {
     const [figmaValue, setFigmaValue] = useState('')
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "assets/figmaunityapp/Build/figmaunityapp.loader.js",
-        dataUrl: "assets/figmaunityapp/Build/figmaunityapp.data.unityweb",
-        frameworkUrl: "assets/figmaunityapp/Build/figmaunityapp.framework.js.unityweb",
-        codeUrl: "assets/figmaunityapp/Build/figmaunityapp.wasm.unityweb",
+        loaderUrl: "assets/brotlicompressed/Build/testBuildw.loader.js",
+        dataUrl: "assets/brotlicompressed/Build/testBuildw.data.unityweb",
+        frameworkUrl: "assets/brotlicompressed/Build/testBuildw.framework.js.unityweb",
+        codeUrl: "assets/brotlicompressed/Build/testBuildw.wasm.unityweb",
     });
     const handledSync = async (event: any) => {
         event.preventDefault();
